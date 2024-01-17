@@ -1,0 +1,208 @@
+:root {
+    --darkblue: #6495ED;
+  }
+
+body{
+    background: white;
+    overflow-x: hidden;
+}
+
+.header {
+    overflow: hidden;
+    font-family: impact;
+    font-size: 35px;
+    padding: 20px 13px;
+    text-align: left;
+    letter-spacing: 2px;
+}
+
+.logo {
+    color: white;
+    position: fixed;
+    z-index: 1000;
+}
+
+.wrapper .sidebar{
+    background: var(--darkblue);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 225px;
+    height: 100%;
+    padding: 130px 0;
+    transition: all 0.5s ease;
+    font-family: 'Noto Sans', sans-serif;
+    z-index: 800;
+}
+
+.wrapper .sidebar ul li a{
+    display: block;
+    padding: 30px 30px;
+    border-bottom: 1px solid white;
+    color: white;
+    font-size: 17px;
+    text-decoration: none;
+    position: relative;
+    width: 165px;
+    left: -40px;
+}
+
+.wrapper .sidebar ul li a .icon{
+    color: white;
+    width: 30px;
+    display: inline-block;
+}
+
+.wrapper .sidebar ul li a:hover,
+.wrapper .sidebar ul li a.active{
+    color: var(--darkblue);
+
+    background:white;
+    border-right: 2px solid var(--darkblue);
+}
+
+.wrapper .sidebar ul li a:hover .icon,
+.wrapper .sidebar ul li a.active .icon{
+    color: var(--darkblue);
+}
+
+.wrapper .sidebar ul li a:hover:before,
+.wrapper .sidebar ul li a.active:before{
+    display: block;
+}
+
+.content1 {
+    position: relative;
+    top: -10px;
+    left: 215px;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.Clubs {
+    font-size: 12px;
+    padding-left: 60px;
+    color:#7c7c7c;
+}
+
+button {
+    background-color: #f3b9a2;
+    color: white;
+    font-size: 18px;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    margin-left: 60px;
+    text-align: center;
+    width: 250px;
+    height: 200px;
+    border: none;
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: #e6a58c;
+    color: white;
+}
+
+.btn1, .btn2 {
+    background-color: #bfbfbf;
+    color: #808080;
+    font-size: 18px;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    margin-left: 60px;
+    text-align: center;
+    width: 250px;
+    height: 200px;
+    border: none;
+    border-radius: 10px;
+}
+
+.btn1:hover, .btn2:hover {
+    background-color: #a8a8a8;
+    color: #5e5e5e;
+}
+
+
+
+.content2 {
+    display: none;
+    position: relative;
+    top: -10px;
+    left: 215px;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+form {
+    margin: -20px;
+    width: 600px;
+    text-align: center;
+    padding: 20px;
+    padding-bottom: 25px;
+    line-height: 25px;
+    background: white;
+    border-radius: 15px;
+    color: var(--darkblue);
+    box-shadow: 0 2px 16px rgba(58, 58, 58, 0.6);
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: bold;
+  }
+
+  .clubForm {
+    padding-left: 250px;
+    padding-top: 50px;
+    justify-content: center;
+    align-items: center;
+    margin: 80px;
+  }
+
+  input[id=fname] {
+    margin-left: 5px;
+    background: #d7d7d7;
+    margin-top: 15px;
+    padding: 6px;
+    border: 0;
+    border-radius: 5px;
+    color: #797979;
+    width: 200px;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: bold;
+  }
+
+  select[id=cat] {
+    margin-left: 5px;
+    margin-bottom: 12px;
+    background: #d7d7d7;
+    padding: 6px;
+    border: 0;
+    border-radius: 5px;
+    color: #797979;
+    width: 200px;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: bold;
+  }
+
+  input[id=desc] {
+    margin-left: 5px;
+    background: #d7d7d7;
+    margin-top: 6px;
+    padding: 6px;
+    border: 0;
+    border-radius: 5px;
+    color: #797979;
+    width: 300px;
+    height: 40px;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: bold;
+  }
+
+  input[type=submit] {
+    background: var(--darkblue);
+    margin: 10px;
+    padding: 8px;
+    border: 0;
+    border-radius: 5px;
+    color: white;
+    width: 100px;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: bold;
+  }

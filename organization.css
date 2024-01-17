@@ -1,0 +1,119 @@
+:root {
+    --darkblue: #6495ED;
+  }
+
+body{
+    background: white;
+}
+
+.header {
+    overflow: hidden;
+    font-family: impact;
+    font-size: 35px;
+    padding: 20px 13px;
+    text-align: left;
+    letter-spacing: 2px;
+}
+
+.logo {
+    color: white;
+    position: fixed;
+    z-index: 1000;
+}
+
+.wrapper .sidebar{
+    background: var(--darkblue);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 225px;
+    height: 100%;
+    padding: 130px 0;
+    transition: all 0.5s ease;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.wrapper .sidebar ul li a{
+    display: block;
+    padding: 30px 30px;
+    border-bottom: 1px solid white;
+    color: white;
+    font-size: 17px;
+    text-decoration: none;
+    position: relative;
+    width: 165px;
+    left: -40px;
+}
+
+.wrapper .sidebar ul li a .icon{
+    color: white;
+    width: 30px;
+    display: inline-block;
+}
+
+.wrapper .sidebar ul li a:hover,
+.wrapper .sidebar ul li a.active{
+    color: var(--darkblue);
+
+    background:white;
+    border-right: 2px solid var(--darkblue);
+}
+
+.wrapper .sidebar ul li a:hover .icon,
+.wrapper .sidebar ul li a.active .icon{
+    color: var(--darkblue);
+}
+
+.wrapper .sidebar ul li a:hover:before,
+.wrapper .sidebar ul li a.active:before{
+    display: block;
+}
+
+.content1 {
+    width: 1100px;
+    color: var(--darkblue);
+    position: relative;
+    left: 260px;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.searchw {
+    font-size: 20px;
+    color: #b4b4b4;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+input[type=search] {
+    height: 25px;
+    border-style: solid;
+    border-color: #b4b4b4;
+    border-radius: 8px;
+}
+
+.userc {
+    margin-bottom: 25px;
+    font-size: 25px;
+    font-family: 'Noto Sans', sans-serif;
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.userc button {
+    background: #d7d7d7;
+    margin: 10px;
+    padding: 5px;
+    border: 0;
+    border-radius: 5px;
+    color: #898989;
+    width: 50px;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.userc button:hover {
+    background: #c4c4c4;
+    color: #767676;
+}

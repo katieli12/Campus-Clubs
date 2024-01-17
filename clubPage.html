@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="appss.js"></script>
+  <script src="https://kit.fontawesome.com/93fc44c7f5.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple website</title>
+    <link rel="stylesheet" href="clubPage.css">
+</head>
+<div class="header">
+    <a style="text-decoration:none;" href="#default" class="logo">Club<br>Connect</a>
+</div>
+<body>
+  <div class="wrapper">
+    <div class="sidebar">
+      <ul  style="list-style-type: none">
+        <li>
+          <a href="home.html">
+              <span class="icon"><i class="fas fa-home"></i></span>
+              <span class="item">Home</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="active">
+              <span class="icon"><i class="fas fa-desktop"></i></span>
+              <span class="item">My Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a href="organization.html">
+              <span class="icon"><i class="fas fa-user-friends"></i></span>
+              <span class="item">Organizations</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+              <span class="icon"><i class="fa-solid fa-comment"></i></span>
+              <span class="item">Messages</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+              <span class="icon"><i class="fa-solid fa-user"></i></span>
+              <span class="item">Account</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+              <span class="icon"><i class="fas fa-cog"></i></span>
+              <span class="item">Settings</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="section1" id="section1">
+    <div class="Clubs">
+        <a class="head1" id="head1" href="#default">ART CLUB</a><br><br>
+        <span class="textt">Cvhs Art Club!</span>
+    </div>
+    <div class="nav" id="nav">
+      <button class="btn" id="btn" onclick="showf();">
+        <span class="txt1">Create Post</span>
+      </button>
+      <button class="btn2" id="btn2">
+        <i class="fa-solid fa-users"></i>
+      </button>
+      <button class="btn3" id="btn3">
+        <i class="fa-solid fa-message"></i>
+      </button>
+      <button class="btn4" id="btn4">
+        <i class="fa-solid fa-file"></i>
+      </button>
+      <button class="btn5" id="btn5">
+        <i class="fa-solid fa-images"></i>
+      </button>
+      <button class="btn6" id="btn6">
+        <i class="fa-solid fa-calendar-days"></i>
+      </button>
+      <button class="btn7" id="btn7">
+        <i class="fa-solid fa-gear"></i>
+      </button>
+    </div>
+  </div>
+  <div class="section2" id="section2">
+    <span class="textt" id="textt">Nothing here yet</span>
+    <div class="posts" id="posts">
+      <!-- Existing posts will appear here -->
+    </div>
+    <span class="textt" id="texttt"></span>
+  </div>
+  <div class="section3" id="section3">
+    <form onsubmit="event.preventDefault(); createPost();">
+        <h1>Create Post</h1>
+        <label for="postTitle">Title:</label><br>
+        <input type="text" id="postTitle" required><br><br>
+
+        <label for="postContent">Content:</label><br>
+        <textarea id="postContent" required></textarea><br><br>
+
+        <button type="submit">Post</button>
+    </form>
+  </div>
+</body>

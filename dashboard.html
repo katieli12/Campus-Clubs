@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="apps.js"></script>
+  <script src="https://kit.fontawesome.com/93fc44c7f5.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple website</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<div class="header">
+    <a style="text-decoration:none;" href="#default" class="logo">Club<br>Connect</a>
+</div>
+<body>
+  <div class="wrapper">
+    <div class="sidebar">
+      <ul  style="list-style-type: none">
+        <li>
+          <a href="home.html">
+              <span class="icon"><i class="fas fa-home"></i></span>
+              <span class="item">Home</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="active">
+              <span class="icon"><i class="fas fa-desktop"></i></span>
+              <span class="item">My Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a href="organization.html">
+              <span class="icon"><i class="fas fa-user-friends"></i></span>
+              <span class="item">Organizations</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+              <span class="icon"><i class="fa-solid fa-comment"></i></span>
+              <span class="item">Messages</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+              <span class="icon"><i class="fa-solid fa-user"></i></span>
+              <span class="item">Account</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+              <span class="icon"><i class="fas fa-cog"></i></span>
+              <span class="item">Settings</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="content1" id="content1">
+    <div class="Clubs">
+        <h1 class="head1">Joined Clubs</h1>
+    </div>
+    <div class="clubBox">
+      <button class="btn1" id="btn1">
+        <span class="txt1">+ Join a Club</span>
+      </button>
+    </div>
+    <div class="Clubs">
+      <h1 class="head2">My Clubs</h1>
+    </div>
+    <div class="clubBox">
+      <button class="btn2" id="btn2">
+        <span class="txt2" id="txt2">+ Create a Club</span>
+      </button>
+    </div>
+    <div class="yourclub" id="yourclub">
+      <!-- Existing posts will appear here -->
+    </div>
+  </div>
+  <div class="content2" id="content2">
+    <div class="clubForm">
+      <form onsubmit="event.preventDefault(); createC();">
+        <h1 class="title1">Create a Club</h1>
+        <label for="fname">Club Name</label>
+        <input type="text" id="fname" name="fname" value="" placeholder="Name"><br><br>
+        <label for="cat">Category</label>
+        <select id="cat" name="cat">
+          <option value="English">English</option>
+          <option value="Math">Math</option>
+          <option value="Science">Science</option>
+          <option value="Art">Art</option>  
+        </select><br>
+        <label for="desc">Description</label>
+        <input type="text" id="desc" name="desc" placeholder="Describe your club!"><br><br>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+</body>
